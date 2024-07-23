@@ -3,7 +3,7 @@
 This repository contains a Jupyter Notebook (fdsProject.ipynb) for classifying images into nine different species using a convolutional neural network (CNN) and VGG16 pre_trained model with feature extraction PCA layer.
 
 ## Table of Contents
-- Introduction(#introduction)
+- Introduction(# introduction)
 - Dataset(#dataset)
 - Steps involved(#steps-involved)
 - Model Architecture(#model-architecture)
@@ -53,30 +53,8 @@ The dataset used in this project consists of images belonging to the following n
 - Visualizing images with Grad-CAM heatmap
   
 ## Model Architecture
-The model architecture is based on a CNN, designed to handle image data efficiently. The architecture includes several convolutional layers, max-pooling layers, and fully connected layers. Below is a summary of the model architecture:
-Model: "sequential"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- conv2d (Conv2D)             (None, 222, 222, 32)      896       
-                                                                 
- max_pooling2d (MaxPooling2D) (None, 111, 111, 32)     0         
-                                                                 
- flatten (Flatten)           (None, 394272)            0         
-                                                                 
- dense (Dense)               (None, 128)               50466944  
-                                                                 
- dropout (Dropout)           (None, 128)               0         
-                                                                 
- dense_1 (Dense)             (None, 64)                8256      
-                                                                 
- dense_2 (Dense)             (None, 9)                 585       
-                                                                 
-=================================================================
-Total params: 50476681 (192.55 MB)
-Trainable params: 50476681 (192.55 MB)
-Non-trainable params: 0 (0.00 Byte)
-_______________________________________________________
+The model architecture is based on a CNN, designed to handle image data efficiently. The architecture includes several convolutional layers, max-pooling layers, and fully connected layers.
+Later the dataset is trained with the model VGG16 pre-trained one with the addition of PCA layer for extracting important features of fishes.
 
 ## Training
 The model is trained on the dataset using a specified number of epochs. The notebook includes code for splitting the dataset into training and validation sets, data augmentation, and the training loop.
