@@ -3,16 +3,16 @@
 This repository contains a Jupyter Notebook (fdsProject.ipynb) for classifying images into nine different species using a convolutional neural network (CNN) and VGG16 pre_trained model with feature extraction PCA layer.
 
 ## Table of Contents
-- Introduction(# introduction)
-- Dataset(#dataset)
-- Steps involved(#steps-involved)
-- Model Architecture(#model-architecture)
-- Training(#training)
-- Evaluation(#evaluation)
-- Results(#results)
-- Usage(#usage)
-- Dependencies(#dependencies)
-- Acknowledgements
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Steps involved](#steps-involved)
+- [Model Architecture](#model-architecture)
+- [Training](#training)
+- [Evaluation](#evaluation)
+- [Results](#results)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 This project aims to classify images into one of nine species using a CNN. The notebook includes data preprocessing, model training, evaluation, and visualization of results.
